@@ -93,7 +93,7 @@ def other_cal():
         if INDEX != -1:
             if en_Other.get() != "":
                 cost = str(int(float(en_Other.get()) / float(prices[INDEX])))
-                cost = cost + " " + currencies[INDEX]
+                cost = cost + " USD"
                 out_Other["state"] = "normal"
                 out_Other.insert(0, cost)
                 out_Other["state"] = "readonly"
